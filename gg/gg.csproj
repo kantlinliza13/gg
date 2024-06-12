@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{30482321-E5F5-41D8-BCC1-176C70C01D89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>gg</RootNamespace>
+    <AssemblyName>gg</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="harakteristika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="harakteristika.Designer.cs">
+      <DependentUpon>harakteristika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu.Designer.cs">
+      <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogon.Designer.cs">
+      <DependentUpon>ogon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sovmestimost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sovmestimost.Designer.cs">
+      <DependentUpon>sovmestimost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="voda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="voda.Designer.cs">
+      <DependentUpon>voda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="zemlya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="zemlya.Designer.cs">
+      <DependentUpon>zemlya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vozduh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vozduh.Designer.cs">
+      <DependentUpon>vozduh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="harakteristika.resx">
+      <DependentUpon>harakteristika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu.resx">
+      <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogon.resx">
+      <DependentUpon>ogon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sovmestimost.resx">
+      <DependentUpon>sovmestimost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="voda.resx">
+      <DependentUpon>voda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vozduh.resx">
+      <DependentUpon>vozduh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="zemlya.resx">
+      <DependentUpon>zemlya.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\козерог.jpg" />
+    <None Include="Resources\телец1.jpg" />
+    <None Include="Resources\дева1.jpeg" />
+    <None Include="Resources\скорпион1.jpeg" />
+    <None Include="Resources\рак1.jpg" />
+    <None Include="Resources\рыба1.jpg" />
+    <None Include="Resources\ktd.jpg" />
+    <None Include="Resources\pic1.jpg" />
+    <None Include="Resources\paperstained-2.jpg" />
+    <None Include="Resources\1644194880_3-abrakadabra-fun-p-fon-dlya-taro-4.jpg" />
+    <None Include="Resources\pic2.jpg" />
+    <Content Include="Resources\taro\1.jpg" />
+    <Content Include="Resources\taro\10 и 28.jpg" />
+    <Content Include="Resources\taro\11 и 29.jpg" />
+    <Content Include="Resources\taro\12.png" />
+    <Content Include="Resources\taro\13.jpg" />
+    <Content Include="Resources\taro\14.png" />
+    <Content Include="Resources\taro\15.jpg" />
+    <Content Include="Resources\taro\16.jpg" />
+    <Content Include="Resources\taro\17.jpg" />
+    <Content Include="Resources\taro\19.jpeg" />
+    <Content Include="Resources\taro\2.png" />
+    <Content Include="Resources\taro\20.jpg" />
+    <Content Include="Resources\taro\21.png" />
+    <Content Include="Resources\taro\22.jpg" />
+    <Content Include="Resources\taro\3 и 30.png" />
+    <Content Include="Resources\taro\4 и 31.jpg" />
+    <Content Include="Resources\taro\5 и 23.jpg" />
+    <Content Include="Resources\taro\6 и 24.jpg" />
+    <Content Include="Resources\taro\7 и 25.png" />
+    <Content Include="Resources\taro\8 26.jpg" />
+    <Content Include="Resources\taro\9 и 27.jpg" />
+    <Content Include="Resources\близнецы.jpg" />
+    <None Include="Resources\стрелец.jpg" />
+    <None Include="Resources\овен1.jpg" />
+    <None Include="Resources\близнецы1.jpg" />
+    <Content Include="Resources\весы.jpg" />
+    <None Include="Resources\весы1.jpg" />
+    <None Include="Resources\водолей.jpg" />
+    <Content Include="Resources\дева.jpeg" />
+    <Content Include="Resources\овен.jpg" />
+    <Content Include="Resources\рак.jpg" />
+    <Content Include="Resources\рыба.jpg" />
+    <Content Include="Resources\скорпион.jpeg" />
+    <Content Include="Resources\телец.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
